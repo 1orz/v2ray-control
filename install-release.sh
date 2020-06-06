@@ -10,7 +10,7 @@
 # 3: Network error
 
 CUR_VER=""
-NEW_VER="4.23.4"
+NEW_VER=""
 ARCH=""
 VDIS=""
 ZIPFILE="/tmp/v2ray/v2ray.zip"
