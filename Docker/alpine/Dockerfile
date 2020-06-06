@@ -1,12 +1,12 @@
 FROM ubuntu:latest as builder
 
-LABEL maintainer="Rico <rico93@outlook.com>"
+LABEL maintainer="Rico-Rebuild by 1orz"
 
 ENV v2ray_version=4.23.4
 
 RUN apt-get update
 RUN apt-get install curl -y
-RUN curl -L -o /tmp/go.sh https://raw.githubusercontent.com/rico93/v2ray-core/master/release/install-release.sh
+RUN curl -L -o /tmp/go.sh https://raw.githubusercontent.com/1orz/v2ray-control/dev/release/install-release.sh
 RUN chmod +x /tmp/go.sh
 RUN /tmp/go.sh --version ${v2ray_version} --panelurl https://google.com --panelkey 55fUxDGFzH3n --nodeid 123456
 
